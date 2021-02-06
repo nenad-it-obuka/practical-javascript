@@ -1,0 +1,52 @@
+Version 8 - Getting data from inputs
+[] There should be a button for adding a todo.
+[] There should be a button for editing a todo.
+[] There should be a button for removing a todo.
+[] There should be a button for toggling a todo.
+
+
+
+
+Version 7 - Buttons
+[x] It should have a displayTodos button.
+[x] The displayTodos button should run the displayTodos function.
+[x] It should have a toggleAll button.
+[x] The toggleAll button should run the toggleAll function.
+
+
+Version 6 - Toggle all
+[x] It should have a function for toggling all todos.
+[x] If everything is false ==> change everything to true.
+[x] If everything is true ==> change evereything to false.
+[x] If mixed ==> change everything to true.
+
+
+Version 5 - Displaying data better
+[x] It should have a function for displaying todos.
+[x] displayTodos should show the todoText and completed properties.
+
+
+Version 4 - Toggling 
+[x] It should have a function to toggle a todo.
+
+
+Version 3 - Using objects 
+[x] We should initialize the todos variable with objects.
+[x] The add function should add objects.
+[x] The edit function should edit objects.
+
+
+Version 2 - Using functions
+[x] It should have a function to add a todo
+[x] It should have a function to edit a todo
+[x] It should have a function to remove a todo
+
+
+Version 1 - Getting started 
+[x] It should have a place to store todos;
+[x] It should have a way to display todos;
+[x] It should have a way to add a todo;
+[x] It should have a way to edit a todo;
+[x] It should have a way to remove a todo;
+
+

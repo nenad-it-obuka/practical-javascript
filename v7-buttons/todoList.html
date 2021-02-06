@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta charset="UTF-8">
+    <title>Practical JavaScript</title>
+  </head>
+
+  <body>
+    <button id='display-todos-button'>Display todos</button>
+    <button id='toggle-all-button'>Toggle all</button>
+    <script>
+      var todos = [
+        {todoText: 'Item 1', completed: false},
+        {todoText: 'Item 2', completed: false},
+        {todoText: 'Item 3', completed: false}
+      ];
+
+      displayTodos(); // display todos
+
+      function add(initialTodoText) { // add a todo
+        todos.push({todoText: initialTodoText, completed: false});    
+        displayTodos();        
+      }
+
+      function edit(position, newTodoText) { // edit a todo
+        todos[position].todoText = newTodoText;
+        displayTodos();
+      }
+
+      function remove(position) { // remove a todo
+        todos.splice(position, 1);
+        displayTodos();
+      }  
+
+      function toggle(position) {
+        if(todos[position].completed === false) {
+          todos[position].completed = true;
+        } else {
+          todos[position].completed = false;
+        }
+        
+        displayTodos();
+      }
+
+      function displayTodos() {
+        for (var i = 0; i < todos.length; i++) {
+          console.log(todos[i]);
+        }      
+      }
+
+      function toggleAll() {
+        var completedTodos = 0;
+
+        for (var i = 0; i < todos.length; i++) {
+          if(todos[i].completed === true) {
+            completedTodos++;
+          }
+        }
+
+        if(completedTodos === todos.length) {
+          for (var i = 0; i < todos.length; i++) {
+            todos[i].completed = false;
+          }
+        } else {
+          for (var i = 0; i < todos.length; i++) {
+            todos[i].completed = true;
+          }
+        }
+
+        displayTodos();        
+      }
+
+      var displayTodosButton = document.getElementById('display-todos-button');
+      displayTodosButton.addEventListener('click', displayTodos);      
+
+      var toggleAllButton = document.getElementById('toggle-all-button');
+      toggleAllButton.addEventListener('click', toggleAll);
+      
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>    
+    <meta charset="UTF-8">
+    <title>Practical JavaScript</title>
+  </head>
+
+  <body>
+    <script>
+      var todos = [
+        {todoText: 'Item 1', completed: false},
+        {todoText: 'Item 2', completed: false},
+        {todoText: 'Item 3', completed: false}
+      ];
+
+      displayTodos(); // display todos
+
+
+      function add(initialTodoText) { // add a todo
+        todos.push({todoText: initialTodoText, completed: false});    
+        displayTodos();        
+      }
+
+      function edit(position, newTodoText) { // edit a todo
+        todos[position].todoText = newTodoText;
+        displayTodos();
+      }
+
+      function remove(position) { // remove a todo
+        todos.splice(position, 1);
+        displayTodos();
+      }  
+
+      function toggle(position) {
+        if(todos[position].completed === false) {
+          todos[position].completed = true;
+        } else {
+          todos[position].completed = false;
+        }
+        
+        displayTodos();
+      }
+
+      function displayTodos() {
+        for (var i = 0; i < todos.length; i++) {
+          console.log(todos[i]);
+        }      
+      }
+
+          
+    </script>
+  </body>
+</html>

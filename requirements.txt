@@ -1,3 +1,8 @@
+Version 10 - Click to delete
+[x] Each todo should have its own remove button.
+[x] The remove buttons should actually work.
+
+
 Version 9 - Escape from the console
 [x] There should be an li for each todo.
 [x] Each li should show the todoText property.

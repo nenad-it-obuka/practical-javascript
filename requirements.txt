@@ -1,3 +1,10 @@
+Version 11 - Click to toggle
+[x] Each todo should have its own toggle button.
+[x] The toggle buttons should actually work.
+
+
+
+
 Version 10 - Click to delete
 [x] Each todo should have its own remove button.
 [x] The remove buttons should actually work.

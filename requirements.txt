@@ -1,8 +1,13 @@
+Version 12 - Click to edit
+[x] Each todo should have its own edit button.
+[x] The edit buttons should actually work.
+[x] If someone hits Cancel we should do nothing.
+[x] If someone hits OK and the field is empty we should do nothing.
+
+
 Version 11 - Click to toggle
 [x] Each todo should have its own toggle button.
 [x] The toggle buttons should actually work.
-
-
 
 
 Version 10 - Click to delete
